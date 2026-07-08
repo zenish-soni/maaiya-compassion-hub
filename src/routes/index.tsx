@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site-layout";
 import { useEffect, useState } from "react";
-import { ArrowRight, Heart, Play, Quote, Users, HandCoins, Sprout, Utensils, Baby, HeartPulse, Sparkles } from "lucide-react";
+import { ArrowRight, Play, Quote, Users, HandCoins, Sprout, Utensils, Baby, HeartPulse, Sparkles } from "lucide-react";
 import a1 from "@/assets/gallery/activity-1.png.asset.json";
 import a2 from "@/assets/gallery/activity-2.png.asset.json";
 import a3 from "@/assets/gallery/activity-3.png.asset.json";
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
 
 const callouts = [
   { title: "Today is the day to reach out and lend a helping hand", tint: "bg-[#c8873a]/85", img: a7.url },
-  { title: "Even the smallest donation can help change a life", tint: "bg-[#1e3a5f]/85", img: a2.url },
+  { title: "Even the smallest act of kindness can help change a life", tint: "bg-[#1e3a5f]/85", img: a2.url },
   { title: "Become a volunteer. You'll feel the benefits instantly", tint: "bg-[#3b6fa0]/85", img: a6.url },
 ] as const;
 
@@ -112,7 +112,7 @@ function Home() {
               className={"max-w-2xl text-primary-foreground transition-all duration-700 " + (i === slide ? "opacity-100 translate-y-0" : "pointer-events-none absolute opacity-0 translate-y-4")}
             >
               <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.24em] backdrop-blur">
-                <Heart className="h-3.5 w-3.5" /> {s.kicker}
+                <Sparkles className="h-3.5 w-3.5" /> {s.kicker}
               </div>
               <h1 className="mt-6 font-display text-5xl leading-[1.02] text-white sm:text-6xl lg:text-7xl">
                 {s.title} <span className="text-[#e0b872]">{s.accent}</span>
@@ -120,8 +120,8 @@ function Home() {
               </h1>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">{s.body}</p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="#donate" className="inline-flex items-center gap-2 rounded-full bg-[#e0b872] px-6 py-3 font-semibold text-[#0f1b3d] shadow-warm transition hover:brightness-105">
-                  <Heart className="h-4 w-4" /> Donate Now
+                <a href="#join" className="inline-flex items-center gap-2 rounded-full bg-[#e0b872] px-6 py-3 font-semibold text-[#0f1b3d] shadow-warm transition hover:brightness-105">
+                  <Users className="h-4 w-4" /> Join Us Now
                 </a>
                 <a href="#causes" className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/5 px-6 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/15">
                   View More <ArrowRight className="h-4 w-4" />
@@ -152,8 +152,8 @@ function Home() {
             <div className={"absolute inset-0 " + c.tint} />
             <div className="relative flex flex-col gap-4 p-8 text-white lg:p-10">
               <p className="max-w-[16rem] font-display text-2xl leading-snug">{c.title}</p>
-              <a href="#donate" className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#0f1b3d] shadow-lift transition hover:brightness-95">
-                Donate
+              <a href="#join" className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#0f1b3d] shadow-lift transition hover:brightness-95">
+                Join Us
               </a>
             </div>
           </div>
@@ -202,8 +202,8 @@ function Home() {
               A network of donors, volunteers and partners who show up — meal by meal, book by
               book, home by home. Small acts, compounded across a state.
             </p>
-            <a href="#donate" className="mt-7 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-[#0f1b3d] shadow-lift">
-              Read more <ArrowRight className="h-4 w-4" />
+            <a href="#join" className="mt-7 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-[#0f1b3d] shadow-lift">
+              Join Us <ArrowRight className="h-4 w-4" />
             </a>
           </div>
         </div>
@@ -239,8 +239,8 @@ function Home() {
                       <span className="text-muted-foreground">Goal: <span className="font-semibold text-foreground">{inr(c.goal)}</span></span>
                     </div>
                   </div>
-                  <a href="#donate" className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary">
-                    Donate <ArrowRight className="h-4 w-4" />
+                  <a href="#join" className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                    Join This Cause <ArrowRight className="h-4 w-4" />
                   </a>
                 </div>
               </article>
@@ -304,8 +304,8 @@ function Home() {
         </div>
       </section>
 
-      {/* NEWSLETTER + DONATE */}
-      <section id="donate" className="relative isolate overflow-hidden">
+      {/* NEWSLETTER + JOIN */}
+      <section id="join" className="relative isolate overflow-hidden">
         <div className="absolute inset-0 bg-[#3b6fa0]" />
         <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-5 py-14 text-white md:flex-row lg:px-8">
           <div>

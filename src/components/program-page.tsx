@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { SiteLayout } from "./site-layout";
 import type { LucideIcon } from "lucide-react";
-import { ArrowRight, Heart } from "lucide-react";
+import { ArrowRight, Users } from "lucide-react";
 
 export interface ProgramPageProps {
   eyebrow: string;
@@ -99,12 +99,12 @@ export function ProgramPage({ eyebrow, title, tagline, intro, highlights, focus,
           <div className="relative flex flex-col items-start justify-between gap-8 text-cream md:flex-row md:items-center">
             <div className="max-w-xl">
               <h3 className="text-3xl text-white sm:text-4xl">Stand with us on this journey</h3>
-              <p className="mt-3 text-white/85">Your support fuels every meal, every lesson, every treatment.</p>
+              <p className="mt-3 text-white/85">Your time and support fuel every meal, every lesson, every treatment.</p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <a href="#donate" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-primary shadow-lift transition hover:scale-[1.03]">
-                <Heart className="h-4 w-4" /> Donate
-              </a>
+              <Link to="/#join" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-primary shadow-lift transition hover:scale-[1.03]">
+                <Users className="h-4 w-4" /> Join Us
+              </Link>
               <Link to="/gallery" className="inline-flex items-center gap-2 rounded-full border border-white/60 px-6 py-3 font-semibold text-white transition hover:bg-white/10">
                 See our work <ArrowRight className="h-4 w-4" />
               </Link>
