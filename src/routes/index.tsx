@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site-layout";
-import { ArrowRight, Heart, Play, Quote, Users, HandCoins, Sprout, Utensils } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowRight, Heart, Play, Quote, Users, HandCoins, Sprout, Utensils, Baby, HeartPulse, Sparkles } from "lucide-react";
 import a1 from "@/assets/gallery/activity-1.png.asset.json";
 import a2 from "@/assets/gallery/activity-2.png.asset.json";
 import a3 from "@/assets/gallery/activity-3.png.asset.json";
