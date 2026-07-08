@@ -9,8 +9,56 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SuposhanRouteImport } from './routes/suposhan'
+import { Route as SukritiRouteImport } from './routes/sukriti'
+import { Route as SrijansheelRouteImport } from './routes/srijansheel'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SantriptRouteImport } from './routes/santript'
+import { Route as SamarthanRouteImport } from './routes/samarthan'
+import { Route as NirmayaRouteImport } from './routes/nirmaya'
+import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SuposhanRoute = SuposhanRouteImport.update({
+  id: '/suposhan',
+  path: '/suposhan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SukritiRoute = SukritiRouteImport.update({
+  id: '/sukriti',
+  path: '/sukriti',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SrijansheelRoute = SrijansheelRouteImport.update({
+  id: '/srijansheel',
+  path: '/srijansheel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SantriptRoute = SantriptRouteImport.update({
+  id: '/santript',
+  path: '/santript',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SamarthanRoute = SamarthanRouteImport.update({
+  id: '/samarthan',
+  path: '/samarthan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NirmayaRoute = NirmayaRouteImport.update({
+  id: '/nirmaya',
+  path: '/nirmaya',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +67,144 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/gallery': typeof GalleryRoute
+  '/nirmaya': typeof NirmayaRoute
+  '/samarthan': typeof SamarthanRoute
+  '/santript': typeof SantriptRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/srijansheel': typeof SrijansheelRoute
+  '/sukriti': typeof SukritiRoute
+  '/suposhan': typeof SuposhanRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/gallery': typeof GalleryRoute
+  '/nirmaya': typeof NirmayaRoute
+  '/samarthan': typeof SamarthanRoute
+  '/santript': typeof SantriptRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/srijansheel': typeof SrijansheelRoute
+  '/sukriti': typeof SukritiRoute
+  '/suposhan': typeof SuposhanRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/gallery': typeof GalleryRoute
+  '/nirmaya': typeof NirmayaRoute
+  '/samarthan': typeof SamarthanRoute
+  '/santript': typeof SantriptRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/srijansheel': typeof SrijansheelRoute
+  '/sukriti': typeof SukritiRoute
+  '/suposhan': typeof SuposhanRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/gallery'
+    | '/nirmaya'
+    | '/samarthan'
+    | '/santript'
+    | '/sitemap.xml'
+    | '/srijansheel'
+    | '/sukriti'
+    | '/suposhan'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/gallery'
+    | '/nirmaya'
+    | '/samarthan'
+    | '/santript'
+    | '/sitemap.xml'
+    | '/srijansheel'
+    | '/sukriti'
+    | '/suposhan'
+  id:
+    | '__root__'
+    | '/'
+    | '/gallery'
+    | '/nirmaya'
+    | '/samarthan'
+    | '/santript'
+    | '/sitemap.xml'
+    | '/srijansheel'
+    | '/sukriti'
+    | '/suposhan'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  GalleryRoute: typeof GalleryRoute
+  NirmayaRoute: typeof NirmayaRoute
+  SamarthanRoute: typeof SamarthanRoute
+  SantriptRoute: typeof SantriptRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SrijansheelRoute: typeof SrijansheelRoute
+  SukritiRoute: typeof SukritiRoute
+  SuposhanRoute: typeof SuposhanRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/suposhan': {
+      id: '/suposhan'
+      path: '/suposhan'
+      fullPath: '/suposhan'
+      preLoaderRoute: typeof SuposhanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sukriti': {
+      id: '/sukriti'
+      path: '/sukriti'
+      fullPath: '/sukriti'
+      preLoaderRoute: typeof SukritiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/srijansheel': {
+      id: '/srijansheel'
+      path: '/srijansheel'
+      fullPath: '/srijansheel'
+      preLoaderRoute: typeof SrijansheelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/santript': {
+      id: '/santript'
+      path: '/santript'
+      fullPath: '/santript'
+      preLoaderRoute: typeof SantriptRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/samarthan': {
+      id: '/samarthan'
+      path: '/samarthan'
+      fullPath: '/samarthan'
+      preLoaderRoute: typeof SamarthanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nirmaya': {
+      id: '/nirmaya'
+      path: '/nirmaya'
+      fullPath: '/nirmaya'
+      preLoaderRoute: typeof NirmayaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +217,14 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  GalleryRoute: GalleryRoute,
+  NirmayaRoute: NirmayaRoute,
+  SamarthanRoute: SamarthanRoute,
+  SantriptRoute: SantriptRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SrijansheelRoute: SrijansheelRoute,
+  SukritiRoute: SukritiRoute,
+  SuposhanRoute: SuposhanRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
