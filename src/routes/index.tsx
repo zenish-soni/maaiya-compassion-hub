@@ -152,8 +152,8 @@ function Home() {
             <div className={"absolute inset-0 " + c.tint} />
             <div className="relative flex flex-col gap-4 p-8 text-white lg:p-10">
               <p className="max-w-[16rem] font-display text-2xl leading-snug">{c.title}</p>
-              <a href="#donate" className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#0f1b3d] shadow-lift transition hover:brightness-95">
-                Donate
+              <a href="#join" className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#0f1b3d] shadow-lift transition hover:brightness-95">
+                Join Us
               </a>
             </div>
           </div>
