@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site-layout";
 import { useState } from "react";
-import a1 from "@/assets/gallery/activity-1.png.asset.json";
-import a2 from "@/assets/gallery/activity-2.png.asset.json";
-import a3 from "@/assets/gallery/activity-3.png.asset.json";
-import a4 from "@/assets/gallery/activity-4.png.asset.json";
-import a5 from "@/assets/gallery/activity-5.png.asset.json";
-import a6 from "@/assets/gallery/activity-6.png.asset.json";
-import a7 from "@/assets/gallery/activity-7.png.asset.json";
-import a8 from "@/assets/gallery/activity-8.png.asset.json";
+import a1 from "@/assets/gallery/activity-1.png";
+import a2 from "@/assets/gallery/activity-2.png";
+import a3 from "@/assets/gallery/activity-3.png";
+import a4 from "@/assets/gallery/activity-4.png";
+import a5 from "@/assets/gallery/activity-5.png";
+import a6 from "@/assets/gallery/activity-6.png";
+import a7 from "@/assets/gallery/activity-7.png";
+import a8 from "@/assets/gallery/activity-8.png";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({

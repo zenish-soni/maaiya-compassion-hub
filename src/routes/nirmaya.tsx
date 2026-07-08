@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/gallery/activity-7.png.asset.json";
+import heroImg from "@/assets/gallery/activity-7.png";
 import { ProgramPage } from "@/components/program-page";
 import { HeartPulse } from "lucide-react";
 

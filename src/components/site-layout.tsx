@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
-import logoAsset from "@/assets/maaiya-logo.png.asset.json";
+import logoAsset from "@/assets/maaiya-logo.png";
 import { Facebook, Instagram, Twitter, Youtube, Linkedin, Menu, X, Mail, MapPin } from "lucide-react";
 
 const nav = [
