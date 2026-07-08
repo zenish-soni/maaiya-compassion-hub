@@ -42,38 +42,38 @@
   --font-display: "Fraunces", ui-serif, Georgia, serif;
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
 
-  /* Brand palette drawn from the Maaiya logo — saffron sunset over plum */
-  --saffron: oklch(0.78 0.16 55);
-  --saffron-deep: oklch(0.68 0.19 40);
-  --plum: oklch(0.38 0.14 340);
-  --plum-deep: oklch(0.28 0.11 335);
-  --ink: oklch(0.19 0.02 320);
-  --cream: oklch(0.98 0.02 85);
+  /* Brand palette — Navy Trust: institutional navy with a crisp accent */
+  --saffron: oklch(0.58 0.09 250);        /* mid-blue accent (#3b6fa0) */
+  --saffron-deep: oklch(0.42 0.10 255);   /* deeper blue */
+  --plum: oklch(0.24 0.07 260);           /* deep navy primary (#0f1b3d) */
+  --plum-deep: oklch(0.18 0.06 262);      /* near-black navy */
+  --ink: oklch(0.20 0.03 260);            /* text ink */
+  --cream: oklch(0.97 0.005 250);         /* off-white (#e8edf3-ish) */
 
-  --background: var(--cream);
+  --background: oklch(1 0 0);
   --foreground: var(--ink);
   --card: oklch(1 0 0);
   --card-foreground: var(--ink);
   --popover: oklch(1 0 0);
   --popover-foreground: var(--ink);
   --primary: var(--plum);
-  --primary-foreground: var(--cream);
-  --secondary: var(--saffron);
-  --secondary-foreground: var(--ink);
-  --muted: oklch(0.95 0.02 70);
-  --muted-foreground: oklch(0.42 0.03 320);
+  --primary-foreground: oklch(0.98 0.005 250);
+  --secondary: var(--cream);
+  --secondary-foreground: var(--plum);
+  --muted: oklch(0.96 0.008 250);
+  --muted-foreground: oklch(0.45 0.02 260);
   --accent: var(--saffron);
-  --accent-foreground: var(--ink);
+  --accent-foreground: oklch(0.98 0.005 250);
   --destructive: oklch(0.55 0.22 27);
-  --destructive-foreground: var(--cream);
-  --border: oklch(0.88 0.02 60);
-  --input: oklch(0.88 0.02 60);
-  --ring: var(--plum);
+  --destructive-foreground: oklch(0.98 0.005 250);
+  --border: oklch(0.90 0.01 250);
+  --input: oklch(0.90 0.01 250);
+  --ring: var(--saffron);
 
-  --gradient-sunset: linear-gradient(135deg, var(--saffron) 0%, var(--saffron-deep) 45%, var(--plum) 100%);
-  --gradient-warm: linear-gradient(180deg, var(--cream) 0%, oklch(0.94 0.04 70) 100%);
-  --shadow-warm: 0 20px 50px -20px color-mix(in oklab, var(--plum) 40%, transparent);
-  --shadow-lift: 0 12px 32px -12px color-mix(in oklab, var(--ink) 25%, transparent);
+  --gradient-sunset: linear-gradient(135deg, var(--plum-deep) 0%, var(--plum) 45%, var(--saffron) 100%);
+  --gradient-warm: linear-gradient(180deg, oklch(1 0 0) 0%, var(--cream) 100%);
+  --shadow-warm: 0 20px 50px -20px color-mix(in oklab, var(--plum) 45%, transparent);
+  --shadow-lift: 0 12px 32px -12px color-mix(in oklab, var(--plum) 30%, transparent);
 }
 
 @layer base {
