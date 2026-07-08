@@ -239,8 +239,8 @@ function Home() {
                       <span className="text-muted-foreground">Goal: <span className="font-semibold text-foreground">{inr(c.goal)}</span></span>
                     </div>
                   </div>
-                  <a href="#donate" className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary">
-                    Donate <ArrowRight className="h-4 w-4" />
+                  <a href="#join" className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                    Join This Cause <ArrowRight className="h-4 w-4" />
                   </a>
                 </div>
               </article>
