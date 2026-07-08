@@ -112,7 +112,7 @@ function Home() {
               className={"max-w-2xl text-primary-foreground transition-all duration-700 " + (i === slide ? "opacity-100 translate-y-0" : "pointer-events-none absolute opacity-0 translate-y-4")}
             >
               <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.24em] backdrop-blur">
-                <Heart className="h-3.5 w-3.5" /> {s.kicker}
+                <Sparkles className="h-3.5 w-3.5" /> {s.kicker}
               </div>
               <h1 className="mt-6 font-display text-5xl leading-[1.02] text-white sm:text-6xl lg:text-7xl">
                 {s.title} <span className="text-[#e0b872]">{s.accent}</span>
