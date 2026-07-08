@@ -120,8 +120,8 @@ function Home() {
               </h1>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">{s.body}</p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="#donate" className="inline-flex items-center gap-2 rounded-full bg-[#e0b872] px-6 py-3 font-semibold text-[#0f1b3d] shadow-warm transition hover:brightness-105">
-                  <Heart className="h-4 w-4" /> Donate Now
+                <a href="#join" className="inline-flex items-center gap-2 rounded-full bg-[#e0b872] px-6 py-3 font-semibold text-[#0f1b3d] shadow-warm transition hover:brightness-105">
+                  <Users className="h-4 w-4" /> Join Us Now
                 </a>
                 <a href="#causes" className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/5 px-6 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/15">
                   View More <ArrowRight className="h-4 w-4" />
