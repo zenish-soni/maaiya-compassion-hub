@@ -304,8 +304,8 @@ function Home() {
         </div>
       </section>
 
-      {/* NEWSLETTER + DONATE */}
-      <section id="donate" className="relative isolate overflow-hidden">
+      {/* NEWSLETTER + JOIN */}
+      <section id="join" className="relative isolate overflow-hidden">
         <div className="absolute inset-0 bg-[#3b6fa0]" />
         <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-5 py-14 text-white md:flex-row lg:px-8">
           <div>
