@@ -11,27 +11,34 @@ export interface ProgramPageProps {
   highlights: { title: string; body: string }[];
   focus: string[];
   Icon: LucideIcon;
-  accent?: string; // css color
+  heroImage?: string;
+  accent?: string;
 }
 
-export function ProgramPage({ eyebrow, title, tagline, intro, highlights, focus, Icon }: ProgramPageProps) {
+export function ProgramPage({ eyebrow, title, tagline, intro, highlights, focus, Icon, heroImage }: ProgramPageProps) {
   return (
     <SiteLayout>
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-sunset" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(255,255,255,0.25),transparent_55%)]" />
+      <section className="relative isolate overflow-hidden">
+        {heroImage ? (
+          <>
+            <img src={heroImage} alt="" className="absolute inset-0 h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0f1b3d]/90 via-[#0f1b3d]/70 to-[#0f1b3d]/40" />
+          </>
+        ) : (
+          <div className="absolute inset-0 bg-sunset" />
+        )}
         <div className="relative mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[1.4fr_1fr] lg:gap-16 lg:px-8 lg:py-28">
-          <div className="text-cream">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] backdrop-blur">
+          <div className="text-white">
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.24em] backdrop-blur">
               {eyebrow}
             </div>
-            <h1 className="mt-5 text-balance text-5xl leading-[1.05] text-white sm:text-6xl lg:text-7xl">
+            <h1 className="mt-5 text-balance font-display text-5xl leading-[1.05] text-white sm:text-6xl lg:text-7xl">
               {title}
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">{tagline}</p>
           </div>
-          <div className="relative">
+          <div className="relative hidden lg:block">
             <div className="absolute -inset-6 rounded-[2rem] bg-white/10 blur-2xl" />
             <div className="relative grid aspect-square place-items-center rounded-[2rem] border border-white/25 bg-white/10 p-10 backdrop-blur-md">
               <Icon className="h-32 w-32 text-white" strokeWidth={1.25} />
@@ -39,6 +46,7 @@ export function ProgramPage({ eyebrow, title, tagline, intro, highlights, focus,
           </div>
         </div>
       </section>
+
 
       {/* Intro */}
       <section className="mx-auto max-w-4xl px-5 py-20 lg:px-8">
