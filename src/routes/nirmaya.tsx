@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/gallery/activity-7.png.asset.json";
+import heroImg from "@/assets/gallery/activity-7.png";
 import { ProgramPage } from "@/components/program-page";
 import { HeartPulse } from "lucide-react";
 
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/nirmaya")({
   component: () => (
     <ProgramPage
       Icon={HeartPulse}
-      heroImage={heroImg.url}
+      heroImage={heroImg}
       eyebrow="Programme 05"
       title="Nirmaya"
       tagline="Without illness. Nirmaya carries aid and treatment to the families who most often go without either."

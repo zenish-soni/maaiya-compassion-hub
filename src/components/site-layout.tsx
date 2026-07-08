@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
-import logoAsset from "@/assets/maaiya-logo.png.asset.json";
+import logoAsset from "@/assets/maaiya-logo.png";
 import { Facebook, Instagram, Twitter, Youtube, Linkedin, Menu, X, Mail, MapPin } from "lucide-react";
 
 const nav = [
@@ -21,7 +21,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-lg">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 lg:px-8">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logoAsset.url} alt="Maaiya Foundation" className="h-12 w-12 rounded-full object-cover shadow-lift" />
+            <img src={logoAsset} alt="Maaiya Foundation" className="h-12 w-12 rounded-full object-cover shadow-lift" />
             <div className="leading-tight">
               <div className="font-display text-xl font-semibold text-foreground">Maaiya</div>
               <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Social Change Front</div>
@@ -76,7 +76,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 lg:grid-cols-4 lg:px-8">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
-              <img src={logoAsset.url} alt="" className="h-14 w-14 rounded-full" />
+              <img src={logoAsset} alt="" className="h-14 w-14 rounded-full" />
               <div>
                 <div className="font-display text-2xl">Maaiya Foundation</div>
                 <div className="text-xs uppercase tracking-[0.2em] opacity-70">…social change front</div>

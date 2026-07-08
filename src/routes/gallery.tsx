@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site-layout";
 import { useState } from "react";
-import a1 from "@/assets/gallery/activity-1.png.asset.json";
-import a2 from "@/assets/gallery/activity-2.png.asset.json";
-import a3 from "@/assets/gallery/activity-3.png.asset.json";
-import a4 from "@/assets/gallery/activity-4.png.asset.json";
-import a5 from "@/assets/gallery/activity-5.png.asset.json";
-import a6 from "@/assets/gallery/activity-6.png.asset.json";
-import a7 from "@/assets/gallery/activity-7.png.asset.json";
-import a8 from "@/assets/gallery/activity-8.png.asset.json";
+import a1 from "@/assets/gallery/activity-1.png";
+import a2 from "@/assets/gallery/activity-2.png";
+import a3 from "@/assets/gallery/activity-3.png";
+import a4 from "@/assets/gallery/activity-4.png";
+import a5 from "@/assets/gallery/activity-5.png";
+import a6 from "@/assets/gallery/activity-6.png";
+import a7 from "@/assets/gallery/activity-7.png";
+import a8 from "@/assets/gallery/activity-8.png";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -25,14 +25,14 @@ export const Route = createFileRoute("/gallery")({
 const filters = ["All", "Suposhan", "Samarthan", "Santript", "Srijan Sheel", "Nirmaya", "Sukriti"] as const;
 
 const items = [
-  { tag: "Samarthan", caption: "Clothing distribution drive", src: a1.url },
-  { tag: "Santript", caption: "Food grain distribution to families", src: a2.url },
-  { tag: "Srijan Sheel", caption: "Digital literacy session with students", src: a3.url },
-  { tag: "Srijan Sheel", caption: "Handing over laptops to a school", src: a4.url },
-  { tag: "Santript", caption: "Community food distribution event", src: a5.url },
-  { tag: "Samarthan", caption: "Support for underprivileged children", src: a6.url },
-  { tag: "Samarthan", caption: "Outreach across village communities", src: a7.url },
-  { tag: "Samarthan", caption: "School supplies for young learners", src: a8.url },
+  { tag: "Samarthan", caption: "Clothing distribution drive", src: a1 },
+  { tag: "Santript", caption: "Food grain distribution to families", src: a2 },
+  { tag: "Srijan Sheel", caption: "Digital literacy session with students", src: a3 },
+  { tag: "Srijan Sheel", caption: "Handing over laptops to a school", src: a4 },
+  { tag: "Santript", caption: "Community food distribution event", src: a5 },
+  { tag: "Samarthan", caption: "Support for underprivileged children", src: a6 },
+  { tag: "Samarthan", caption: "Outreach across village communities", src: a7 },
+  { tag: "Samarthan", caption: "School supplies for young learners", src: a8 },
 ];
 
 function Gallery() {

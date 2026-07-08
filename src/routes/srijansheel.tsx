@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/gallery/activity-3.png.asset.json";
+import heroImg from "@/assets/gallery/activity-3.png";
 import { ProgramPage } from "@/components/program-page";
 import { Sparkles } from "lucide-react";
 
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/srijansheel")({
   component: () => (
     <ProgramPage
       Icon={Sparkles}
-      heroImage={heroImg.url}
+      heroImage={heroImg}
       eyebrow="Programme 04"
       title="Srijan Sheel"
       tagline="Skills open doors that charity alone cannot. Srijan Sheel builds the abilities that unlock lasting independence."

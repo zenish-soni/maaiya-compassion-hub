@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/gallery/activity-5.png.asset.json";
+import heroImg from "@/assets/gallery/activity-5.png";
 import { ProgramPage } from "@/components/program-page";
 import { Wheat } from "lucide-react";
 
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/santript")({
   component: () => (
     <ProgramPage
       Icon={Wheat}
-      heroImage={heroImg.url}
+      heroImage={heroImg}
       eyebrow="Programme 03"
       title="Santript"
       tagline="A full plate is a foundation. Santript carries food and grains to the families for whom the next meal is not a given."
