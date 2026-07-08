@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import heroImg from "@/assets/gallery/activity-2.png.asset.json";
 import { ProgramPage } from "@/components/program-page";
 import { Baby } from "lucide-react";
 
@@ -14,6 +15,7 @@ export const Route = createFileRoute("/suposhan")({
   component: () => (
     <ProgramPage
       Icon={Baby}
+      heroImage={heroImg.url}
       eyebrow="Programme 02"
       title="Suposhan"
       tagline="Standing beside new mothers in the weeks that matter most — protecting the health of both mother and child."

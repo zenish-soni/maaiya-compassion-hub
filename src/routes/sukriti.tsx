@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import heroImg from "@/assets/gallery/activity-6.png.asset.json";
 import { ProgramPage } from "@/components/program-page";
 import { Leaf } from "lucide-react";
 
@@ -14,6 +15,7 @@ export const Route = createFileRoute("/sukriti")({
   component: () => (
     <ProgramPage
       Icon={Leaf}
+      heroImage={heroImg.url}
       eyebrow="Programme 06"
       title="Sukriti"
       tagline="PrakritiDharma — a duty toward building back. The environment we inherit is the one we owe forward."
