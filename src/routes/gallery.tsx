@@ -1,7 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site-layout";
-import heroImg from "@/assets/hero-community.jpg";
 import { useState } from "react";
+import a1 from "@/assets/gallery/activity-1.png.asset.json";
+import a2 from "@/assets/gallery/activity-2.png.asset.json";
+import a3 from "@/assets/gallery/activity-3.png.asset.json";
+import a4 from "@/assets/gallery/activity-4.png.asset.json";
+import a5 from "@/assets/gallery/activity-5.png.asset.json";
+import a6 from "@/assets/gallery/activity-6.png.asset.json";
+import a7 from "@/assets/gallery/activity-7.png.asset.json";
+import a8 from "@/assets/gallery/activity-8.png.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -17,17 +24,15 @@ export const Route = createFileRoute("/gallery")({
 
 const filters = ["All", "Suposhan", "Samarthan", "Santript", "Srijan Sheel", "Nirmaya", "Sukriti"] as const;
 
-// Placeholder gallery — swap in real photos when available.
 const items = [
-  { tag: "Samarthan", caption: "A scholarship handed over" },
-  { tag: "Suposhan", caption: "Post-natal home visit" },
-  { tag: "Santript", caption: "Grain distribution drive" },
-  { tag: "Srijan Sheel", caption: "Skills workshop in session" },
-  { tag: "Nirmaya", caption: "Community health camp" },
-  { tag: "Sukriti", caption: "Tree plantation morning" },
-  { tag: "Samarthan", caption: "Families in the programme" },
-  { tag: "Santript", caption: "Relief packages loaded" },
-  { tag: "Sukriti", caption: "Beach clean-up team" },
+  { tag: "Samarthan", caption: "Clothing distribution drive", src: a1.url },
+  { tag: "Santript", caption: "Food grain distribution to families", src: a2.url },
+  { tag: "Srijan Sheel", caption: "Digital literacy session with students", src: a3.url },
+  { tag: "Srijan Sheel", caption: "Handing over laptops to a school", src: a4.url },
+  { tag: "Santript", caption: "Community food distribution event", src: a5.url },
+  { tag: "Samarthan", caption: "Support for underprivileged children", src: a6.url },
+  { tag: "Samarthan", caption: "Outreach across village communities", src: a7.url },
+  { tag: "Samarthan", caption: "School supplies for young learners", src: a8.url },
 ];
 
 function Gallery() {
