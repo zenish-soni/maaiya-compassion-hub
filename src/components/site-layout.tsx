@@ -42,13 +42,6 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Link
-              to="/"
-              hash="donate"
-              className="hidden items-center gap-2 rounded-full bg-sunset px-5 py-2.5 text-sm font-semibold text-white shadow-warm transition hover:scale-[1.03] sm:inline-flex"
-            >
-              <Heart className="h-4 w-4" /> Donate
-            </Link>
             <button
               onClick={() => setOpen((v) => !v)}
               className="rounded-full p-2 text-foreground lg:hidden"
