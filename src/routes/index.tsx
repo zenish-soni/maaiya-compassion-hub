@@ -202,8 +202,8 @@ function Home() {
               A network of donors, volunteers and partners who show up — meal by meal, book by
               book, home by home. Small acts, compounded across a state.
             </p>
-            <a href="#donate" className="mt-7 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-[#0f1b3d] shadow-lift">
-              Read more <ArrowRight className="h-4 w-4" />
+            <a href="#join" className="mt-7 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-[#0f1b3d] shadow-lift">
+              Join Us <ArrowRight className="h-4 w-4" />
             </a>
           </div>
         </div>
