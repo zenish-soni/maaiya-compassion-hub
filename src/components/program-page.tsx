@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { SiteLayout } from "./site-layout";
 import type { LucideIcon } from "lucide-react";
-import { ArrowRight, Heart } from "lucide-react";
+import { ArrowRight, Users } from "lucide-react";
 
 export interface ProgramPageProps {
   eyebrow: string;
