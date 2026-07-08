@@ -78,7 +78,7 @@ function Gallery() {
           {filtered.map((item, i) => (
             <figure key={i} className="group relative overflow-hidden rounded-2xl border border-border bg-card shadow-lift">
               <img
-                src={heroImg}
+                src={item.src}
                 alt={item.caption}
                 loading="lazy"
                 width={1600}
