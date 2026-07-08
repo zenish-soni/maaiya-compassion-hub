@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
       { title: "Maaiya Foundation — Help the People in Need" },
       { name: "description", content: "Maaiya Foundation stands with women, children and underprivileged families through six programmes: nutrition, livelihoods, healthcare and environment." },
       { property: "og:title", content: "Maaiya Foundation — Help the People in Need" },
-      { property: "og:description", content: "Six programmes standing beside women, children and the underprivileged." },
+      { property: "og:description", content: "Maaiya Foundation stands with women, children and underprivileged families through six programmes: nutrition, livelihoods, healthcare and environment." },
     ],
   }),
   component: Home,
