@@ -319,28 +319,53 @@ function Home() {
         </div>
       </section>
 
-      {/* PROGRAMS QUICK LINKS */}
-      <section id="programs" className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-        <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-6">
-          {[
-            { to: "/samarthan", title: "Samarthan", Icon: HandCoins },
-            { to: "/suposhan", title: "Suposhan", Icon: Heart },
-            { to: "/santript", title: "Santript", Icon: Utensils },
-            { to: "/srijansheel", title: "Srijan Sheel", Icon: Users },
-            { to: "/nirmaya", title: "Nirmaya", Icon: Heart },
-            { to: "/sukriti", title: "Sukriti", Icon: Sprout },
-          ].map((p) => (
-            <Link key={p.to} to={p.to} className="group rounded-2xl border border-border bg-card p-5 text-center shadow-lift transition hover:-translate-y-1">
-              <div className="mx-auto grid h-12 w-12 place-items-center rounded-xl bg-[#0f1b3d] text-white">
-                <p.Icon className="h-5 w-5" />
-              </div>
-              <div className="mt-3 font-semibold text-primary">{p.title}</div>
-            </Link>
-          ))}
+      {/* PROGRAMS UNDER MAAIYA */}
+      <section id="programs" className="bg-muted/40">
+        <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+          <div className="text-center">
+            <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#3b6fa0]">Our Programmes</div>
+            <h2 className="mt-3 font-display text-4xl lg:text-5xl">Six ways we show up.</h2>
+            <div className="mx-auto mt-5 h-[3px] w-16 rounded-full bg-[#e0b872]" />
+            <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
+              Each programme is designed around a real need — mothers, children, transgenders and
+              underprivileged families that stand at the edges of the safety net.
+            </p>
+          </div>
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { to: "/samarthan", title: "Samarthan", Icon: HandCoins, img: a1.url, blurb: "Financial assistance for women, girls and underprivileged children." },
+              { to: "/suposhan", title: "Suposhan", Icon: Baby, img: a2.url, blurb: "Post-delivery support for new mothers — safer starts for mother and child." },
+              { to: "/santript", title: "Santript", Icon: Utensils, img: a5.url, blurb: "Food and grain distribution for families in remote and disaster-hit areas." },
+              { to: "/srijansheel", title: "Srijan Sheel", Icon: Sparkles, img: a3.url, blurb: "Skill-building and digital literacy that lead to real employability." },
+              { to: "/nirmaya", title: "Nirmaya", Icon: HeartPulse, img: a7.url, blurb: "Aid and treatment for the underprivileged, with care that reaches the last home." },
+              { to: "/sukriti", title: "Sukriti", Icon: Sprout, img: a6.url, blurb: "Duty toward the environment — plantation, cleaner waterways, less plastic." },
+            ].map((p) => (
+              <Link
+                key={p.to}
+                to={p.to}
+                className="group overflow-hidden rounded-2xl border border-border bg-card shadow-lift transition hover:-translate-y-1 hover:shadow-warm"
+              >
+                <div className="relative overflow-hidden">
+                  <img src={p.img} alt={p.title} className="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0f1b3d]/60 via-transparent to-transparent" />
+                  <div className="absolute left-4 top-4 grid h-11 w-11 place-items-center rounded-xl bg-[#0f1b3d] text-white shadow-lift">
+                    <p.Icon className="h-5 w-5" />
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="font-display text-2xl text-primary">{p.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.blurb}</p>
+                  <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                    Learn more <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
-        {/* Reference imagery: keep asset used */}
         <img src={a8.url} alt="" className="hidden" />
       </section>
+
     </SiteLayout>
   );
 }
