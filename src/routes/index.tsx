@@ -231,12 +231,12 @@ function Home() {
                   <div className="text-[10px] font-semibold uppercase tracking-widest text-[#c8873a]">Welfare</div>
                   <h3 className="mt-2 font-display text-2xl">{c.title}</h3>
                   <div className="mt-5">
-                    <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
+                    <div className="h-2.5 w-full overflow-hidden rounded-full bg-[#ececec]">
                       <div className="h-full rounded-full bg-[#e0b872]" style={{ width: pct + "%" }} />
                     </div>
                     <div className="mt-3 flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">Raised: <span className="font-semibold text-foreground">{inr(c.raised)}</span></span>
-                      <span className="text-muted-foreground">Goal: <span className="font-semibold text-foreground">{inr(c.goal)}</span></span>
+                      <span className="font-medium text-[#c0392b]">Raised: <span className="font-semibold">{inr(c.raised)}</span></span>
+                      <span className="font-medium text-muted-foreground">Goal: <span className="font-semibold">{inr(c.goal)}</span></span>
                     </div>
                   </div>
                   <a href="#join" className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary">
