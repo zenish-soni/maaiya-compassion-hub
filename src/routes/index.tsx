@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
 
 const callouts = [
   { title: "Today is the day to reach out and lend a helping hand", tint: "bg-[#c8873a]/85", img: a7.url },
-  { title: "Even the smallest donation can help change a life", tint: "bg-[#1e3a5f]/85", img: a2.url },
+  { title: "Even the smallest act of kindness can help change a life", tint: "bg-[#1e3a5f]/85", img: a2.url },
   { title: "Become a volunteer. You'll feel the benefits instantly", tint: "bg-[#3b6fa0]/85", img: a6.url },
 ] as const;
 
