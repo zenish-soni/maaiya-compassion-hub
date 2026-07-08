@@ -15,7 +15,7 @@ export const Route = createFileRoute("/nirmaya")({
   component: () => (
     <ProgramPage
       Icon={HeartPulse}
-      heroImage={heroImg.url}
+      heroImage={heroImg}
       eyebrow="Programme 05"
       title="Nirmaya"
       tagline="Without illness. Nirmaya carries aid and treatment to the families who most often go without either."

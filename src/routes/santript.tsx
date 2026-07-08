@@ -15,7 +15,7 @@ export const Route = createFileRoute("/santript")({
   component: () => (
     <ProgramPage
       Icon={Wheat}
-      heroImage={heroImg.url}
+      heroImage={heroImg}
       eyebrow="Programme 03"
       title="Santript"
       tagline="A full plate is a foundation. Santript carries food and grains to the families for whom the next meal is not a given."

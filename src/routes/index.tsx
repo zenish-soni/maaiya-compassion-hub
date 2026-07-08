@@ -24,21 +24,21 @@ export const Route = createFileRoute("/")({
 });
 
 const callouts = [
-  { title: "Today is the day to reach out and lend a helping hand", tint: "bg-[#c8873a]/85", img: a7.url },
-  { title: "Even the smallest act of kindness can help change a life", tint: "bg-[#1e3a5f]/85", img: a2.url },
-  { title: "Become a volunteer. You'll feel the benefits instantly", tint: "bg-[#3b6fa0]/85", img: a6.url },
+  { title: "Today is the day to reach out and lend a helping hand", tint: "bg-[#c8873a]/85", img: a7 },
+  { title: "Even the smallest act of kindness can help change a life", tint: "bg-[#1e3a5f]/85", img: a2 },
+  { title: "Become a volunteer. You'll feel the benefits instantly", tint: "bg-[#3b6fa0]/85", img: a6 },
 ] as const;
 
 const whoWeAre = [
-  { title: "Stand With Women", body: "Financial aid, dignity kits and post-natal support for mothers, girls and families at the edges of the safety net.", img: a1.url },
-  { title: "Food For All", body: "Grain and ration distribution reaching remote villages, schools and disaster-affected homes.", img: a5.url },
-  { title: "Learn & Earn", body: "Digital literacy, laptops and skill-building so young people can carry their families forward.", img: a3.url },
+  { title: "Stand With Women", body: "Financial aid, dignity kits and post-natal support for mothers, girls and families at the edges of the safety net.", img: a1 },
+  { title: "Food For All", body: "Grain and ration distribution reaching remote villages, schools and disaster-affected homes.", img: a5 },
+  { title: "Learn & Earn", body: "Digital literacy, laptops and skill-building so young people can carry their families forward.", img: a3 },
 ] as const;
 
 const causes = [
-  { tag: "Santript", title: "Food & Ration Relief", img: a2.url, raised: 68000, goal: 100000 },
-  { tag: "Srijan Sheel", title: "Laptops for Village Schools", img: a4.url, raised: 42500, goal: 75000 },
-  { tag: "Samarthan", title: "Support a Child's Education", img: a8.url, raised: 23670, goal: 45000 },
+  { tag: "Santript", title: "Food & Ration Relief", img: a2, raised: 68000, goal: 100000 },
+  { tag: "Srijan Sheel", title: "Laptops for Village Schools", img: a4, raised: 42500, goal: 75000 },
+  { tag: "Samarthan", title: "Support a Child's Education", img: a8, raised: 23670, goal: 45000 },
 ] as const;
 
 const stats = [
@@ -60,7 +60,7 @@ function inr(n: number) {
 
 const heroSlides = [
   {
-    img: a7.url,
+    img: a7,
     kicker: "Social Change Front",
     title: "Help The",
     accent: "Children",
@@ -68,7 +68,7 @@ const heroSlides = [
     body: "Maaiya Foundation walks alongside women, children and underprivileged families — from a plate of food to a school laptop.",
   },
   {
-    img: a2.url,
+    img: a2,
     kicker: "Santript",
     title: "A Full Plate is",
     accent: "a Promise",
@@ -76,7 +76,7 @@ const heroSlides = [
     body: "Grain and ration distribution reaching remote villages, schools and disaster-affected homes across the state.",
   },
   {
-    img: a3.url,
+    img: a3,
     kicker: "Srijan Sheel",
     title: "Skills that",
     accent: "Open Doors",
@@ -184,12 +184,12 @@ function Home() {
 
       {/* FUNDRAISING COMMUNITY BANNER */}
       <section className="relative isolate overflow-hidden">
-        <img src={a6.url} alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={a6} alt="" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-[#0f1b3d]/80" />
         <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-5 py-20 lg:grid-cols-[1fr_1.1fr] lg:px-8">
           <div className="relative">
             <div className="overflow-hidden rounded-2xl shadow-warm">
-              <img src={a5.url} alt="Fundraising community" className="aspect-[4/3] w-full object-cover" />
+              <img src={a5} alt="Fundraising community" className="aspect-[4/3] w-full object-cover" />
             </div>
             <button aria-label="Play video" className="absolute inset-0 m-auto grid h-16 w-16 place-items-center rounded-full bg-white text-[#0f1b3d] shadow-warm transition hover:scale-110">
               <Play className="h-6 w-6 fill-current" />
@@ -247,7 +247,7 @@ function Home() {
 
       {/* STATS STRIP */}
       <section className="relative isolate overflow-hidden">
-        <img src={a4.url} alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={a4} alt="" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-[#0f1b3d]/85" />
         <div className="relative mx-auto grid max-w-7xl grid-cols-2 gap-8 px-5 py-20 text-center text-white md:grid-cols-4 lg:px-8">
           {stats.map((s) => (
@@ -273,7 +273,7 @@ function Home() {
               <Users className="h-4 w-4" /> Sign Up
             </a>
           </div>
-          <img src={a1.url} alt="Volunteers at a Maaiya Foundation event" className="h-full w-full object-cover" />
+          <img src={a1} alt="Volunteers at a Maaiya Foundation event" className="h-full w-full object-cover" />
         </div>
       </section>
 
@@ -329,12 +329,12 @@ function Home() {
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { to: "/samarthan", title: "Samarthan", Icon: HandCoins, img: a1.url, blurb: "Financial assistance for women, girls and underprivileged children." },
-              { to: "/suposhan", title: "Suposhan", Icon: Baby, img: a2.url, blurb: "Post-delivery support for new mothers — safer starts for mother and child." },
-              { to: "/santript", title: "Santript", Icon: Utensils, img: a5.url, blurb: "Food and grain distribution for families in remote and disaster-hit areas." },
-              { to: "/srijansheel", title: "Srijan Sheel", Icon: Sparkles, img: a3.url, blurb: "Skill-building and digital literacy that lead to real employability." },
-              { to: "/nirmaya", title: "Nirmaya", Icon: HeartPulse, img: a7.url, blurb: "Aid and treatment for the underprivileged, with care that reaches the last home." },
-              { to: "/sukriti", title: "Sukriti", Icon: Sprout, img: a6.url, blurb: "Duty toward the environment — plantation, cleaner waterways, less plastic." },
+              { to: "/samarthan", title: "Samarthan", Icon: HandCoins, img: a1, blurb: "Financial assistance for women, girls and underprivileged children." },
+              { to: "/suposhan", title: "Suposhan", Icon: Baby, img: a2, blurb: "Post-delivery support for new mothers — safer starts for mother and child." },
+              { to: "/santript", title: "Santript", Icon: Utensils, img: a5, blurb: "Food and grain distribution for families in remote and disaster-hit areas." },
+              { to: "/srijansheel", title: "Srijan Sheel", Icon: Sparkles, img: a3, blurb: "Skill-building and digital literacy that lead to real employability." },
+              { to: "/nirmaya", title: "Nirmaya", Icon: HeartPulse, img: a7, blurb: "Aid and treatment for the underprivileged, with care that reaches the last home." },
+              { to: "/sukriti", title: "Sukriti", Icon: Sprout, img: a6, blurb: "Duty toward the environment — plantation, cleaner waterways, less plastic." },
             ].map((p) => (
               <Link
                 key={p.to}
@@ -359,7 +359,7 @@ function Home() {
             ))}
           </div>
         </div>
-        <img src={a8.url} alt="" className="hidden" />
+        <img src={a8} alt="" className="hidden" />
       </section>
 
     </SiteLayout>

@@ -15,7 +15,7 @@ export const Route = createFileRoute("/suposhan")({
   component: () => (
     <ProgramPage
       Icon={Baby}
-      heroImage={heroImg.url}
+      heroImage={heroImg}
       eyebrow="Programme 02"
       title="Suposhan"
       tagline="Standing beside new mothers in the weeks that matter most — protecting the health of both mother and child."

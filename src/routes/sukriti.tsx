@@ -15,7 +15,7 @@ export const Route = createFileRoute("/sukriti")({
   component: () => (
     <ProgramPage
       Icon={Leaf}
-      heroImage={heroImg.url}
+      heroImage={heroImg}
       eyebrow="Programme 06"
       title="Sukriti"
       tagline="PrakritiDharma — a duty toward building back. The environment we inherit is the one we owe forward."
