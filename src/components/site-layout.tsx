@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
 import logoAsset from "@/assets/maaiya-logo.png.asset.json";
-import { Facebook, Instagram, Twitter, Youtube, Linkedin, Menu, X, Heart, Mail, MapPin } from "lucide-react";
+import { Facebook, Instagram, Twitter, Youtube, Linkedin, Menu, X, Mail, MapPin } from "lucide-react";
 
 const nav = [
   { to: "/", label: "Home" },
